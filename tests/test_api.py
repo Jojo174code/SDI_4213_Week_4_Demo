@@ -16,7 +16,7 @@ def test_health_check_returns_ok():
     response = client.get("/health")
 
     assert response.status_code == 200
-    assert response.json() == {"status": "ok"}
+    assert response.json() == {"status": "healthy"}
 
 
 def test_read_items_returns_count_and_items():
